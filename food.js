@@ -45,8 +45,8 @@ const displayItem = (items) => {
             let div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
-        <div onclick = "signleItem('${meal.idMeal}')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card">
-            <img src="${meal.strMealThumb}" class="card-img-top img-fluid" alt="${meal.strMeal}">
+        <div onclick = "signleItem('${meal.idMeal}')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card" style="cursor: pointer;">
+            <img  src="${meal.strMealThumb}" class="card-img-top img-fluid" alt="${meal.strMeal}">
             <div class="card-body">
                 <h5 class="card-title">${meal.strMeal}</h5>
                 <p class="card-text">${meal.strInstructions.slice(0, 100)}</p>
